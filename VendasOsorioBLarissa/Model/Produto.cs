@@ -8,16 +8,24 @@ namespace VendasOsorioBLarissa.Model
 {
     class Produto
     {
-
+        //Relacionamento 
+        public int Codigo { get; set; }
         public string Nome { get; set; }
 
-        public string Cpf { get; set; }
+        public Double Quantidade { get; set; }
+
+        public Double Preco { get; set; }
 
         public DateTime CriadoEm { get; set; }
 
         public Produto()
         {
             CriadoEm = DateTime.Now;
+        }
+
+        public override string ToString()
+        {
+            return "Nome: " + Nome + " | Preço: " + Preco + " | Quantidade: " + Quantidade;
         }
 
     }

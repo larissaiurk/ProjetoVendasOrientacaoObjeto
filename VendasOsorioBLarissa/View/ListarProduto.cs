@@ -4,20 +4,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using VendasOsorioBLarissa.DAL;
-using VendasOsorioBLarissa.Model;
 
 namespace VendasOsorioBLarissa.View
 {
-    class ListarClientes
+    class ListarProduto
     {
+
         public static void Renderizar()
         {
-            Console.WriteLine("Listar Clientes");
+            Console.WriteLine("Listar Produtos");
 
-            foreach (Cliente clienteCadastrado in ClienteDAO.listarClientes())
+            foreach (var produto in ProdutoDAO.listarProdutos())
             {
-                Console.WriteLine(clienteCadastrado.ToString() + "\n");
+                Console.WriteLine(produto.ToString() + "\n");
             }
         }
+
     }
 }

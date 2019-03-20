@@ -20,5 +20,10 @@ namespace VendasOsorioBLarissa.Model
             CriadoEm = DateTime.Now;
         }
 
+        public override string ToString()
+        {
+            return "Nome: " + Nome + " | CPF: " + Cpf;
+        }
+
     }
 }

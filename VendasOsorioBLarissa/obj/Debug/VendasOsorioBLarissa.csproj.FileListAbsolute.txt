@@ -11,3 +11,9 @@ C:\Users\Aluno\Downloads\VendasOsorioBLarissa-20190319T222435Z-001\VendasOsorioB
 C:\Users\Aluno\Downloads\VendasOsorioBLarissa-20190319T222435Z-001\VendasOsorioBLarissa\VendasOsorioBLarissa\obj\Debug\VendasOsorioBLarissa.exe
 C:\Users\Aluno\Downloads\VendasOsorioBLarissa-20190319T222435Z-001\VendasOsorioBLarissa\VendasOsorioBLarissa\obj\Debug\VendasOsorioBLarissa.pdb
 C:\Users\Aluno\Downloads\VendasOsorioBLarissa-20190319T222435Z-001\VendasOsorioBLarissa\VendasOsorioBLarissa\obj\Debug\VendasOsorioBLarissa.csprojResolveAssemblyReference.cache
+C:\Users\Aluno\Downloads\ProjetoVendasOrientacaoObjeto\VendasOsorioBLarissa\bin\Debug\VendasOsorioBLarissa.exe.config
+C:\Users\Aluno\Downloads\ProjetoVendasOrientacaoObjeto\VendasOsorioBLarissa\obj\Debug\VendasOsorioBLarissa.exe
+C:\Users\Aluno\Downloads\ProjetoVendasOrientacaoObjeto\VendasOsorioBLarissa\obj\Debug\VendasOsorioBLarissa.pdb
+C:\Users\Aluno\Downloads\ProjetoVendasOrientacaoObjeto\VendasOsorioBLarissa\obj\Debug\VendasOsorioBLarissa.csprojResolveAssemblyReference.cache
+C:\Users\Aluno\Downloads\ProjetoVendasOrientacaoObjeto\VendasOsorioBLarissa\bin\Debug\VendasOsorioBLarissa.exe
+C:\Users\Aluno\Downloads\ProjetoVendasOrientacaoObjeto\VendasOsorioBLarissa\bin\Debug\VendasOsorioBLarissa.pdb

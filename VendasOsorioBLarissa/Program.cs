@@ -33,16 +33,16 @@ namespace VendasOsorioBLarissa.View
                         ListarClientes.Renderizar();
                         break;
                     case 3:
-                        Console.WriteLine("Cadastrar Vendedor");
+                        CadastrarVendedor.Renderizar();
                         break;
                     case 4:
-                        Console.WriteLine("Listar Vendedores");
+                        ListarVendedor.Renderizar();
                         break;
                     case 5:
-                        Console.WriteLine("Cadastrar Produto");
+                        CadastrarProduto.Renderizar();
                         break;
                     case 6:
-                        Console.WriteLine("Listar Produtos");
+                        ListarProduto.Renderizar();
                         break;
                     case 7:
                         Console.WriteLine("Registrar Venda");
