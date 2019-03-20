@@ -22,12 +22,6 @@ namespace VendasOsorioBLarissa.View
             //Cliente
             Console.WriteLine("Digite o CPF do cliente");
             c.Cpf = Console.ReadLine();
-            
-            //Chamar o metodo de busca
-            //Guardar o retorno do metodo
-            //Verificar o que retorna - se retornar nullo nao continua
-            //objeto null: informa uma mensagem de erro
-            //objeto preenchido: guarda objeto dentro da venda
 
             c = ClienteDAO.retornarCliente(c);
             if(c != null)
@@ -36,38 +30,48 @@ namespace VendasOsorioBLarissa.View
                 //Funcionario
                 Console.WriteLine("Digite o CPF do funcionário:");
                 ven.Cpf = Console.ReadLine();
-
                 ven = VendedorDAO.retornarVendedor(ven);
                 if (ven!=null)
                 {
-
                     v.Vendedor = ven;
-                    //Produto
-                    Console.WriteLine("Digite o código do produto:");
-                    p.Codigo = Convert.ToInt32(Console.ReadLine());
-                    p = ProdutoDAO.retornarProduto(p);
-                    if (p != null)
+
+                    //Adicionando itens na venda
+                    do
                     {
-                        v.Produto = p;
+                        Console.Clear();
+                        Console.WriteLine("Adicionando itens \n");
+                        //Incluir produto
+                        p = new Produto();
+                        Console.WriteLine("Digite o código do produto:");
+                        p.Codigo = Convert.ToInt32(Console.ReadLine());
+                        p = ProdutoDAO.retornarProduto(p);
+                        if (p != null)
+                        {
 
-                        Console.WriteLine();
+                            ItemVenda item = new ItemVenda();
+                            item.Produto = p;
+                            item.Preco = p.Preco;
+                            Console.WriteLine("Digite a quantidade:");
+                            item.Quantidade = Convert.ToInt32(Console.ReadLine());
+                            v.ItensVenda.Add(item);
+                        }
+                        else
+                        {
+                            Console.WriteLine("Produto não cadastrado");
+                        }
+                        p = null;
+                        Console.WriteLine("\n Deseja incluir mais produtos? S/N");
+                    } while(Console.ReadLine().ToUpper().Equals("S"));
 
+                    v.DataVenda = DateTime.Now;
+                    VendaDAO.CadastrarVenda(v);
+                    Console.WriteLine("Venda cadastrada com sucesso!");
 
-
-
-
-                    }else
-                    {
-                        Console.WriteLine("Produto não cadastrado");
-                    }
-
-
-                }else
+                }
+                else
                 {
                     Console.WriteLine("Vendedor não cadastrado");
                 }
-
-
             }
             else
             {
@@ -75,5 +79,11 @@ namespace VendasOsorioBLarissa.View
             }                     
             Console.WriteLine("Venda cadastrada com sucesso");
         }
+
+        //Chamar o metodo de busca
+        //Guardar o retorno do metodo
+        //Verificar o que retorna - se retornar nullo nao continua
+        //objeto null: informa uma mensagem de erro
+        //objeto preenchido: guarda objeto dentro da venda
     }
 }

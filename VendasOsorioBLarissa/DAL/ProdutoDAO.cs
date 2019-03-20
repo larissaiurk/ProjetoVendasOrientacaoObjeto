@@ -12,9 +12,13 @@ namespace VendasOsorioBLarissa.DAL
 
         private static List<Produto> produtos = new List<Produto>();
 
-        public static void cadastrarProduto(Produto produto)
+        public static bool cadastrarProduto(Produto produto)
         {
-            produtos.Add(produto);
+            if(retornarProduto(produto) == null) {  
+                produtos.Add(produto);
+                return true;
+            }
+            return false;
         }
 
 

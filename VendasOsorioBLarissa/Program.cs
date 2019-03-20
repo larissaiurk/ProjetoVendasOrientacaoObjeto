@@ -12,7 +12,9 @@ namespace VendasOsorioBLarissa.View
 
             Console.BackgroundColor = ConsoleColor.DarkRed;
             Console.ForegroundColor = ConsoleColor.White;
-            
+
+            Dados.Inserir();
+
             int escolha = 0;
             do
             {
@@ -45,10 +47,10 @@ namespace VendasOsorioBLarissa.View
                         ListarProduto.Renderizar();
                         break;
                     case 7:
-                        Console.WriteLine("Registrar Venda");
+                        CadastrarVenda.Renderizar();
                         break;
                     case 8:
-                        Console.WriteLine("Listar Vendas");
+                        
                         break;
                     case 9:
                         Console.WriteLine("Listar Vendas por Cliente");

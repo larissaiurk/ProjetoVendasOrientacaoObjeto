@@ -44,21 +44,25 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAL\ClienteDAO.cs" />
+    <Compile Include="DAL\Dados.cs" />
     <Compile Include="DAL\ProdutoDAO.cs" />
     <Compile Include="DAL\VendaDAO.cs" />
     <Compile Include="DAL\VendedorDAO.cs" />
     <Compile Include="Model\Cliente.cs" />
+    <Compile Include="Model\ItemVenda.cs" />
     <Compile Include="Model\Produto.cs" />
     <Compile Include="Model\Venda.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Model\Vendedor.cs" />
+    <Compile Include="Utils\Validacao.cs" />
     <Compile Include="View\CadastrarCliente.cs" />
     <Compile Include="View\CadastrarProduto.cs" />
     <Compile Include="View\CadastrarVenda.cs" />
     <Compile Include="View\CadastrarVendedor.cs" />
     <Compile Include="View\ListarClientes.cs" />
     <Compile Include="View\ListarProduto.cs" />
+    <Compile Include="View\ListarVenda.cs" />
     <Compile Include="View\ListarVendedor.cs" />
   </ItemGroup>
   <ItemGroup>
