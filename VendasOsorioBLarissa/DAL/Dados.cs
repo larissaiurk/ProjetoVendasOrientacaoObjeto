@@ -28,7 +28,7 @@ namespace VendasOsorioBLarissa.DAL
 
             Produto p = new Produto
             {
-                Codigo = 123,
+                Codigo = 1,
                 Nome = "Chocolate",
                 Preco = 5.0,
                 Quantidade = 100,
@@ -36,10 +36,11 @@ namespace VendasOsorioBLarissa.DAL
             };
 
             ProdutoDAO.cadastrarProduto(p);
+            p = null;
 
             p = new Produto
             {
-                Codigo = 123,
+                Codigo = 2,
                 Nome = "Água",
                 Preco = 2.0,
                 Quantidade = 100,

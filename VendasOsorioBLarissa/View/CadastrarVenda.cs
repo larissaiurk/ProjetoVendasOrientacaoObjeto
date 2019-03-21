@@ -20,6 +20,7 @@ namespace VendasOsorioBLarissa.View
             Produto p = new Produto();
 
             //Cliente
+            ListarClientes.Renderizar();
             Console.WriteLine("Digite o CPF do cliente");
             c.Cpf = Console.ReadLine();
 
@@ -28,6 +29,7 @@ namespace VendasOsorioBLarissa.View
             {
                 v.Cliente = c;
                 //Funcionario
+                ListarVendedor.Renderizar();
                 Console.WriteLine("Digite o CPF do funcionário:");
                 ven.Cpf = Console.ReadLine();
                 ven = VendedorDAO.retornarVendedor(ven);
@@ -42,6 +44,7 @@ namespace VendasOsorioBLarissa.View
                         Console.WriteLine("Adicionando itens \n");
                         //Incluir produto
                         p = new Produto();
+                        ListarProduto.Renderizar();
                         Console.WriteLine("Digite o código do produto:");
                         p.Codigo = Convert.ToInt32(Console.ReadLine());
                         p = ProdutoDAO.retornarProduto(p);

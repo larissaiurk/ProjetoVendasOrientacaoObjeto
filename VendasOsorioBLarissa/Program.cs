@@ -50,10 +50,13 @@ namespace VendasOsorioBLarissa.View
                         CadastrarVenda.Renderizar();
                         break;
                     case 8:
-                        
+                        //ListarVenda.Renderizar();
                         break;
                     case 9:
-                        Console.WriteLine("Listar Vendas por Cliente");
+                        Cliente c = new Cliente();
+                        Console.Write("Digite o CPF do cliente");
+                        c.Cpf = Console.ReadLine();
+                        ListarVenda.Renderizar(VendaDAO.BuscarVendasPorCpf(c));
                         break;
                     case 0:
                         Console.WriteLine("Gratidão, até mais!");
