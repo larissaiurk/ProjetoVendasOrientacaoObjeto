@@ -1,11 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace VendasOsorioBLarissa.Model
 {
+    [Table("Vendas")]
     class Venda
     {
         public Venda() {
@@ -15,6 +18,8 @@ namespace VendasOsorioBLarissa.Model
             Vendedor = new Vendedor();
         }
 
+        [Key]
+        public int VendaId { get; set; }
         public Cliente Cliente { get; set; }
         public Vendedor Vendedor { get; set; }
         public List<ItemVenda> ItensVenda { get; set; }
@@ -24,9 +29,6 @@ namespace VendasOsorioBLarissa.Model
 
         public override string ToString()
         {
-            // (/t)
-            double subtotal = 0, totalVenda = 0, totalGeral = 0;
-
             String retorno = " Cliente: " + Cliente.Nome + " | CPF: " + Cliente.Cpf + "\n" +
                 " Vendedor: " + Vendedor.Nome + " | CPF: " + Vendedor.Cpf + "\n" +
                 " Data: " + DataVenda;
