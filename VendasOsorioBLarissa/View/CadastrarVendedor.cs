@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using VendasOsorioB.Utils;
 using VendasOsorioBLarissa.DAL;
 using VendasOsorioBLarissa.Model;
 
@@ -12,18 +13,27 @@ namespace VendasOsorioBLarissa.View
     {
         public static void Renderizar()
         {
-            Console.Write("Cadastrar Vendedor");
-
             Vendedor v = new Vendedor();
-            Console.WriteLine("Digite um nome");
+            Console.WriteLine("  -- CADASTRAR FUNCIONÁRIO --  \n");
+            Console.WriteLine("Digite o nome do funcionário:");
             v.Nome = Console.ReadLine();
-            Console.WriteLine("Digite um cpf");
+            Console.WriteLine("Digite o CPF do funcionário:");
             v.Cpf = Console.ReadLine();
-
-            VendedorDAO.cadastrarVendedor(v);
-
-            v = null;
-            Console.WriteLine("Vendedor cadastrado com sucesso");
+            if (Validacao.ValidarCpf(v.Cpf))
+            {
+                if (VendedorDAO.CadastrarVendedor(v))
+                {
+                    Console.WriteLine("\n Funcionário cadastrado com sucesso!");
+                }
+                else
+                {
+                    Console.WriteLine("\n Atenção! Esse funcionário já existe!");
+                }
+            }
+            else
+            {
+                Console.WriteLine("CPF inválido!");
+            }
         }
 
     }

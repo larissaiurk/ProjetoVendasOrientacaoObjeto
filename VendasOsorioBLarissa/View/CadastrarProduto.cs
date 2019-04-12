@@ -13,19 +13,22 @@ namespace VendasOsorioBLarissa.View
         public static void Renderizar()
         {
             Produto p = new Produto();
-            Console.WriteLine("Cadastro de Produto");
-
-            Console.WriteLine("Digite um nome");
+            Console.WriteLine("  -- CADASTRAR PRODUTO --  \n");
+            Console.WriteLine("Digite o nome do produto:");
             p.Nome = Console.ReadLine();
-            Console.WriteLine("Digite o preço");
-            p.Preco = Convert.ToDouble( Console.ReadLine());
-            Console.WriteLine("Digite a quantidade");
+            Console.WriteLine("Digite o preço do produto:");
+            p.Preco = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Digite a quantidade do produto:");
             p.Quantidade = Convert.ToDouble(Console.ReadLine());
+            if (ProdutoDAO.CadastrarProduto(p))
+            {
+                Console.WriteLine("\n Produto cadastrado com sucesso!");
+            }
+            else
+            {
+                Console.WriteLine("\n Esse produto já existe!");
+            }
 
-            ProdutoDAO.cadastrarProduto(p);
-
-            p = null;
-            Console.WriteLine("Produto cadastrado com sucesso.");
         }
     }
 }

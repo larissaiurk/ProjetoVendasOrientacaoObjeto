@@ -49,8 +49,8 @@ namespace VendasOsorioBLarissa.DAL
 
             ProdutoDAO.cadastrarProduto(p);
 
-            ClienteDAO.cadastrarCliente(c);
-            VendedorDAO.cadastrarVendedor(v);
+            ClienteDAO.CadastrarCliente(c);
+            VendedorDAO.CadastrarVendedor(v);
             
 
 

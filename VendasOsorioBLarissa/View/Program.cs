@@ -13,7 +13,7 @@ namespace VendasOsorioBLarissa.View
             Console.BackgroundColor = ConsoleColor.DarkRed;
             Console.ForegroundColor = ConsoleColor.White;
 
-            Dados.Inserir();
+            //Dados.Inserir();
 
             int escolha = 0;
             do
@@ -67,7 +67,7 @@ namespace VendasOsorioBLarissa.View
                         break;
                 }
 
-                Console.WriteLine("\nAperte uma tecla para continuar...");
+                Console.WriteLine("\n Aperte uma tecla para continuar...");
                 Console.ReadKey();
             } while (escolha !=0);
 

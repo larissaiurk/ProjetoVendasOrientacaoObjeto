@@ -10,8 +10,8 @@ namespace VendasOsorioBLarissa.DAL
     class VendedorDAO
     {
 
-        private static List<Vendedor> vendedores = new List<Vendedor>();
-
+        private static Context ctx = SingletonContext.GetInstance();
+      /*  private static List<Vendedor> vendedores = new List<Vendedor>();
         public static bool cadastrarVendedor(Vendedor vendedor)
         {
             if (retornarVendedor(vendedor) == null)
@@ -38,8 +38,28 @@ namespace VendasOsorioBLarissa.DAL
             }
             return null;
 
+        }*/
+
+        public static bool CadastrarVendedor(Vendedor v)
+        {
+            if (BuscarVendedorPorCpf(v) == null)
+            {
+                ctx.Vendedores.Add(v);
+                ctx.SaveChanges();
+                return true;
+            }
+
+            return false;
+        }
+        public static Vendedor BuscarVendedorPorCpf(Vendedor v)
+        {
+            return ctx.Vendedores.FirstOrDefault(x => x.Cpf.Equals(v.Cpf));
         }
 
+        public static List<Vendedor> RetornarVendedores()
+        {
+            return ctx.Vendedores.ToList();
+        }
     }
 }
 

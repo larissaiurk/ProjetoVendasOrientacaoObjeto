@@ -24,7 +24,7 @@ namespace VendasOsorioBLarissa.View
             Console.WriteLine("Digite o CPF do cliente");
             c.Cpf = Console.ReadLine();
 
-            c = ClienteDAO.retornarCliente(c);
+            c = ClienteDAO.BuscarClientePorCpf(c);
             if(c != null)
             {
                 v.Cliente = c;
@@ -32,7 +32,7 @@ namespace VendasOsorioBLarissa.View
                 ListarVendedor.Renderizar();
                 Console.WriteLine("Digite o CPF do funcionário:");
                 ven.Cpf = Console.ReadLine();
-                ven = VendedorDAO.retornarVendedor(ven);
+                ven = VendedorDAO.BuscarVendedorPorCpf(ven);
                 if (ven!=null)
                 {
                     v.Vendedor = ven;

@@ -12,7 +12,7 @@ namespace VendasOsorioBLarissa.View
         public static void Renderizar()
         {
             Console.WriteLine("Listar Vendedores");
-            foreach (var vendedorCadastrado in VendedorDAO.listarVendedores())
+            foreach (var vendedorCadastrado in VendedorDAO.RetornarVendedores())
             {
                 Console.WriteLine(vendedorCadastrado.ToString() + "\n");
             }

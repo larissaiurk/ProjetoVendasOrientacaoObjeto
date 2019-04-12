@@ -58,13 +58,17 @@
     <Compile Include="DAL\SingletonContext.cs" />
     <Compile Include="DAL\VendaDAO.cs" />
     <Compile Include="DAL\VendedorDAO.cs" />
+    <Compile Include="Migrations\201904122237316_teste.cs" />
+    <Compile Include="Migrations\201904122237316_teste.Designer.cs">
+      <DependentUpon>201904122237316_teste.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\Cliente.cs" />
     <Compile Include="Model\Context.cs" />
     <Compile Include="Model\ItemVenda.cs" />
     <Compile Include="Model\Produto.cs" />
     <Compile Include="Model\Venda.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="View\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Model\Vendedor.cs" />
     <Compile Include="Utils\Validacao.cs" />
@@ -80,6 +84,11 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201904122237316_teste.resx">
+      <DependentUpon>201904122237316_teste.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

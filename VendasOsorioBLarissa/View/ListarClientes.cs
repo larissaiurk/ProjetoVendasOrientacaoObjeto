@@ -12,9 +12,9 @@ namespace VendasOsorioBLarissa.View
     {
         public static void Renderizar()
         {
-            Console.WriteLine("Listar Clientes");
+            Console.WriteLine(" -- LISTAR CLIENTES -- /n");
 
-            foreach (Cliente clienteCadastrado in ClienteDAO.listarClientes())
+            foreach (Cliente clienteCadastrado in ClienteDAO.RetornarClientes())
             {
                 Console.WriteLine(clienteCadastrado.ToString() + "\n");
             }

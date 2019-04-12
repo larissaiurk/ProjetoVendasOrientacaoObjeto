@@ -9,7 +9,9 @@ namespace VendasOsorioBLarissa.DAL
 {
     class ClienteDAO
     {
-        private static List<Cliente> clientes = new List<Cliente>();
+        private static Context ctx = SingletonContext.GetInstance();
+
+    /*    private static List<Cliente> clientes = new List<Cliente>();
 
         public static bool cadastrarCliente(Cliente cliente)
         {
@@ -37,8 +39,29 @@ namespace VendasOsorioBLarissa.DAL
             }   
             return null;
 
+        }*/
+        
+        
+        //COM BANCO DE DADOS
+        public static Cliente BuscarClientePorCpf(Cliente c)
+        {
+            return ctx.Clientes.FirstOrDefault(x => x.Cpf.Equals(c.Cpf));
         }
-            
+        public static bool CadastrarCliente(Cliente c)
+        {
+            if (BuscarClientePorCpf(c) == null)
+            {
+                ctx.Clientes.Add(c);
+                ctx.SaveChanges();
+                return true;
+            }
+            return false;
+        }
+        public static List<Cliente> RetornarClientes()
+        {
+            return ctx.Clientes.ToList();
+        }
+
         }
 
 }

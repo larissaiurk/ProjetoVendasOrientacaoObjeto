@@ -21,3 +21,15 @@ C:\Users\Aluno\Downloads\ProjetoVendasOrientacaoObjeto\VendasOsorioBLarissa\bin\
 C:\Users\Aluno\Downloads\ProjetoVendasOrientacaoObjeto\VendasOsorioBLarissa\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\Aluno\Downloads\ProjetoVendasOrientacaoObjeto\VendasOsorioBLarissa\bin\Debug\EntityFramework.xml
 C:\Users\Aluno\Downloads\ProjetoVendasOrientacaoObjeto\VendasOsorioBLarissa\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Aluno\Downloads\Nova pasta\ProjetoVendasOrientacaoObjeto\VendasOsorioBLarissa\bin\Debug\VendasOsorioBLarissa.exe.config
+C:\Users\Aluno\Downloads\Nova pasta\ProjetoVendasOrientacaoObjeto\VendasOsorioBLarissa\obj\Debug\VendasOsorioBLarissa.exe
+C:\Users\Aluno\Downloads\Nova pasta\ProjetoVendasOrientacaoObjeto\VendasOsorioBLarissa\obj\Debug\VendasOsorioBLarissa.pdb
+C:\Users\Aluno\Downloads\Nova pasta\ProjetoVendasOrientacaoObjeto\VendasOsorioBLarissa\bin\Debug\VendasOsorioBLarissa.exe
+C:\Users\Aluno\Downloads\Nova pasta\ProjetoVendasOrientacaoObjeto\VendasOsorioBLarissa\bin\Debug\VendasOsorioBLarissa.pdb
+C:\Users\Aluno\Downloads\Nova pasta\ProjetoVendasOrientacaoObjeto\VendasOsorioBLarissa\bin\Debug\EntityFramework.dll
+C:\Users\Aluno\Downloads\Nova pasta\ProjetoVendasOrientacaoObjeto\VendasOsorioBLarissa\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Aluno\Downloads\Nova pasta\ProjetoVendasOrientacaoObjeto\VendasOsorioBLarissa\bin\Debug\EntityFramework.xml
+C:\Users\Aluno\Downloads\Nova pasta\ProjetoVendasOrientacaoObjeto\VendasOsorioBLarissa\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Aluno\Downloads\Nova pasta\ProjetoVendasOrientacaoObjeto\VendasOsorioBLarissa\obj\Debug\VendasOsorioBLarissa.csprojResolveAssemblyReference.cache
+C:\Users\Aluno\Downloads\Nova pasta\ProjetoVendasOrientacaoObjeto\VendasOsorioBLarissa\obj\Debug\VendasOsorioBLarissa.Migrations.teste.resources
+C:\Users\Aluno\Downloads\Nova pasta\ProjetoVendasOrientacaoObjeto\VendasOsorioBLarissa\obj\Debug\VendasOsorioBLarissa.csproj.GenerateResource.Cache
