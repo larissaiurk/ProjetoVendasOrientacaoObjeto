@@ -35,7 +35,7 @@ namespace VendasOsorioBLarissa.DAL
                 CriadoEm = DateTime.Now
             };
 
-            ProdutoDAO.cadastrarProduto(p);
+            ProdutoDAO.CadastrarProduto(p);
             p = null;
 
             p = new Produto
@@ -47,7 +47,7 @@ namespace VendasOsorioBLarissa.DAL
                 CriadoEm = DateTime.Now
             };
 
-            ProdutoDAO.cadastrarProduto(p);
+            ProdutoDAO.CadastrarProduto(p);
 
             ClienteDAO.CadastrarCliente(c);
             VendedorDAO.CadastrarVendedor(v);

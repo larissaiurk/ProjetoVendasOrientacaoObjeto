@@ -47,7 +47,7 @@ namespace VendasOsorioBLarissa.View
                         ListarProduto.Renderizar();
                         Console.WriteLine("Digite o código do produto:");
                         p.Codigo = Convert.ToInt32(Console.ReadLine());
-                        p = ProdutoDAO.retornarProduto(p);
+                        p = ProdutoDAO.BuscarProduto(p);
                         if (p != null)
                         {
 
@@ -66,6 +66,8 @@ namespace VendasOsorioBLarissa.View
                         Console.WriteLine("\n Deseja incluir mais produtos? S/N");
                     } while(Console.ReadLine().ToUpper().Equals("S"));
 
+
+                    v.Quantidade = 1;
                     v.DataVenda = DateTime.Now;
                     VendaDAO.CadastrarVenda(v);
                     Console.WriteLine("Venda cadastrada com sucesso!");

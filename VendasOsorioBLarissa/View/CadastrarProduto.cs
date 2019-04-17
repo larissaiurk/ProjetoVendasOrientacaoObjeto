@@ -14,6 +14,8 @@ namespace VendasOsorioBLarissa.View
         {
             Produto p = new Produto();
             Console.WriteLine("  -- CADASTRAR PRODUTO --  \n");
+            Console.WriteLine("Digite o código do produto");
+            p.Codigo = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Digite o nome do produto:");
             p.Nome = Console.ReadLine();
             Console.WriteLine("Digite o preço do produto:");

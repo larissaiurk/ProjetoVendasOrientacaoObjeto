@@ -47,6 +47,7 @@ namespace VendasOsorioBLarissa.DAL
         {
             return ctx.Clientes.FirstOrDefault(x => x.Cpf.Equals(c.Cpf));
         }
+
         public static bool CadastrarCliente(Cliente c)
         {
             if (BuscarClientePorCpf(c) == null)

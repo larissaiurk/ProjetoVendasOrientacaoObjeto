@@ -11,6 +11,13 @@ namespace VendasOsorioBLarissa.Model
     [Table("ItensVenda")]
     class ItemVenda
     {
+        public ItemVenda()
+        {
+            CriadoEm = DateTime.Now;
+
+            Produto = new Produto();
+        }
+
         [Key]
         public int ItemVendaId { get; set; }
         public Produto Produto { get; set; }
@@ -19,5 +26,8 @@ namespace VendasOsorioBLarissa.Model
         public DateTime CriadoEm { get; set; }
         public Venda Venda { get; set; }
 
+
     }
+
+
 }

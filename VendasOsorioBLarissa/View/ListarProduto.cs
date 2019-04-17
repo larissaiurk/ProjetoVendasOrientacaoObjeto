@@ -14,7 +14,7 @@ namespace VendasOsorioBLarissa.View
         {
             Console.WriteLine("Listar Produtos");
 
-            foreach (var produto in ProdutoDAO.listarProdutos())
+            foreach (var produto in ProdutoDAO.RetornarProdutos())
             {
                 Console.WriteLine(produto.ToString() + "\n");
             }

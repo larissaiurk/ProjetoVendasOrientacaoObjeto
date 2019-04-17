@@ -33,3 +33,15 @@ C:\Users\Aluno\Downloads\Nova pasta\ProjetoVendasOrientacaoObjeto\VendasOsorioBL
 C:\Users\Aluno\Downloads\Nova pasta\ProjetoVendasOrientacaoObjeto\VendasOsorioBLarissa\obj\Debug\VendasOsorioBLarissa.csprojResolveAssemblyReference.cache
 C:\Users\Aluno\Downloads\Nova pasta\ProjetoVendasOrientacaoObjeto\VendasOsorioBLarissa\obj\Debug\VendasOsorioBLarissa.Migrations.teste.resources
 C:\Users\Aluno\Downloads\Nova pasta\ProjetoVendasOrientacaoObjeto\VendasOsorioBLarissa\obj\Debug\VendasOsorioBLarissa.csproj.GenerateResource.Cache
+D:\Developer\ProjetoVendasOrientacaoObjeto\VendasOsorioBLarissa\bin\Debug\VendasOsorioBLarissa.exe.config
+D:\Developer\ProjetoVendasOrientacaoObjeto\VendasOsorioBLarissa\obj\Debug\VendasOsorioBLarissa.exe
+D:\Developer\ProjetoVendasOrientacaoObjeto\VendasOsorioBLarissa\obj\Debug\VendasOsorioBLarissa.pdb
+D:\Developer\ProjetoVendasOrientacaoObjeto\VendasOsorioBLarissa\obj\Debug\VendasOsorioBLarissa.csprojResolveAssemblyReference.cache
+D:\Developer\ProjetoVendasOrientacaoObjeto\VendasOsorioBLarissa\obj\Debug\VendasOsorioBLarissa.Migrations.teste.resources
+D:\Developer\ProjetoVendasOrientacaoObjeto\VendasOsorioBLarissa\obj\Debug\VendasOsorioBLarissa.csproj.GenerateResource.Cache
+D:\Developer\ProjetoVendasOrientacaoObjeto\VendasOsorioBLarissa\bin\Debug\VendasOsorioBLarissa.exe
+D:\Developer\ProjetoVendasOrientacaoObjeto\VendasOsorioBLarissa\bin\Debug\VendasOsorioBLarissa.pdb
+D:\Developer\ProjetoVendasOrientacaoObjeto\VendasOsorioBLarissa\bin\Debug\EntityFramework.dll
+D:\Developer\ProjetoVendasOrientacaoObjeto\VendasOsorioBLarissa\bin\Debug\EntityFramework.SqlServer.dll
+D:\Developer\ProjetoVendasOrientacaoObjeto\VendasOsorioBLarissa\bin\Debug\EntityFramework.xml
+D:\Developer\ProjetoVendasOrientacaoObjeto\VendasOsorioBLarissa\bin\Debug\EntityFramework.SqlServer.xml

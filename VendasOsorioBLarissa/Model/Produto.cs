@@ -27,7 +27,7 @@ namespace VendasOsorioBLarissa.Model
         }
         public override string ToString()
         {
-            return "Nome: " + Nome + " | Preço: " + Preco + " | Quantidade: " + Quantidade;
+            return "Código:" + Codigo +  " | Nome: " + Nome + " | Preço: " + Preco + " | Quantidade: " + Quantidade;
         }
 
     }

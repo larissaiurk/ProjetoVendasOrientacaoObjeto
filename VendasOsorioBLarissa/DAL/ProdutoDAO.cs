@@ -42,18 +42,25 @@ namespace VendasOsorioBLarissa.DAL
 
         public static bool CadastrarProduto(Produto p)
         {
-            if (BuscarProduto(p))
+            if (BuscarProduto(p) == null)
             {
-
+                ctx.Produtos.Add(p);
+                ctx.SaveChanges();
+                return true;
             }
             return false;
         }
 
         public static Produto BuscarProduto(Produto p)
         {
-
-
+            return ctx.Produtos.FirstOrDefault(x => x.Codigo == p.Codigo);
 
         }
+
+        public static List<Produto> RetornarProdutos()
+        {
+            return ctx.Produtos.ToList();
+        }
+
     }
 }
